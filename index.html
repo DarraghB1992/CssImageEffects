@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Image Editor</title>
+		<link href='http://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
+		<link href = "css/reset.css" type="text/css" rel="stylesheet">
+		<link href = "css/main.css" type="text/css" rel="stylesheet">
+
+	</head>
+
+	<body>
+		<div class="container">
+			<h1>Photo Editor</h1>
+				
+			<!--Controls for CSS filters via range input-->
+			<div class="sliders">
+				<form id="imageEditor">
+					<p>
+						<label for="greyscale">Grayscale</label>
+						<input id="greyscale" name="greyscale" type="range" min=0 max=250 value=0>
+					</p>
+
+					<p>
+						<label for="blur">Blur</label>
+						<input id="blur" name="blur" type="range" min=0 max=10 value=0>
+					</p>
+
+					<p>
+						<label for="brightness">Brightness</label>
+						<input id="brightness" name="brightness" type="range" min=0 max=200 value=100>
+					</p>
+
+					<p>
+						<label for="contrast">Contrast</label>
+						<input id="contrast" name="contrast" type="range" min=0 max=200 value=100>
+					</p>
+
+					<p>
+						<label for="huer">Hue</label>
+						<input id="huer" name="huer" type="range" min=0 max=360 value=0>
+					</p>
+
+					<p>
+						<label for="opacity">Opacity</label>
+						<input id="opacity" name="opacity" type="range" min=0 max=100 value=100>
+					</p>
+
+					<p>
+						<label for="inverse">Inverse</label>
+						<input id="inverse" name="inverse" type="range" min=0 max=100 value=0>
+					</p>
+
+					<p>
+						<label for="saturate">Saturate</label>
+						<input id="saturate" name="saturate" type="range" min=0 max=500 value=100>
+					</p>
+
+					<p>
+						<label for="sepia">Sepia</label>
+						<input id="sepia" name="sepia" type="range" min=0 max=100 value=0>
+					</p>
+
+					<input type="reset" form="imageEditor" id="reset" value="Reset" />
+
+				</form>
+			</div>	
+
+			<div id="imageContainer" class="center">
+				<img width="300" src="image/owl.jpg"/>
+			</div>
+		</div>
+
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+		
+	</body>
+</html>
